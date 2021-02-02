@@ -1,0 +1,14 @@
+@mixin flex($justCont,$aligItms,$wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    grid-gap:2rem;
+    justify-content: $justCont;
+    align-items: $aligItms;
+}
+
+@mixin containe($width,$padding) {
+    width: 100%;
+    max-width: $width;
+    padding: 0 $padding;
+    margin: 0 auto;
+} 

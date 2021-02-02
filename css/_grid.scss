@@ -1,0 +1,24 @@
+.grid_container{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main' 
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    // height: 100%;
+}
+header{
+    grid-area: header;
+    background-color: $blue;
+    height: 50vh;
+}
+main{
+    grid-area: main;
+    background-color: $red;
+    height: 100vh;
+}
+footer{
+    grid-area: footer;
+    background-color: $orange;
+}

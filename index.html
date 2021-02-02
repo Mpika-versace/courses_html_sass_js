@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comy-house</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <header class="header">
+       <nav class="header_nav">
+           <div class="container">
+            <div class="header_flex">
+                <a href="https://tympanus.net/codrops/" class="header_link"><i class="fas fa-bars"></i></a>
+                <a href="https://javascript.info/async-await" target="_blank" class="header_brand">comfy <span class="header_house" >House</span></a>
+                <a href="#" class="header_panier"><i class="fas fa-shopping-cart"></i><span class="header_compteur">1</span></a>
+            
+               </div>
+            </nav>
+            <div class="header_shop">
+                <h1>fourniture collection</h1>
+                <button type="submit" class="btn header_btn">shop now</button>
+            </div>
+           </div>
+          
+    </header>
+    <main class="main">
+        <section class="product">
+            <div class="container">
+                <div class="content">
+                    <h1 class="product_title">our products</h1>
+                    <div class="product_row">
+                        <div class="product_col">
+                            <!-- <article class="product_col_card"> 
+                                <img src="images/product-1.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1" ><i class="fas fa-shopping-cart"></i> add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="product_col_card_price">$10.99</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-2.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="price">$12.30</p>
+                                </div>
+
+                            </article>
+
+                            <article class="product_col_card">
+                                <img src="images/product-3.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="product_col_card_price">$12.90</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-4.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="product_col_card_price">$15.20</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-5.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="product_col_card_price">$20.25</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-6.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="price">$55.23</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-7.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="price">$70.99</p>
+                                </div>
+
+                            </article>
+                            <article class="product_col_card">
+                                <img src="images/product-8.jpeg" alt="product">
+                                <button class=" product_col_card_btn" date-id="1"><i class="fas fa-shopping-cart"></i> Add a bag</button>
+                                <div class="product_col_description">
+                                    <h3>Qeen Panel Bed</h3>
+                                    <p class="product_col_card_price">$80.99</p>
+                                </div>
+
+                            </article>-->
+                        </div>
+                        <div class="product_col"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fixed">
+         <div class="fixed_card">
+                <span class="fixed_close"><i class="fas fa-times-circle"></i></span>
+           
+                <h2 class="fixed_title">Your Cart</h2>
+            <div class="fixed_flex">
+                <div class="fixed_flex_show">
+                        <img src="images/product-2.jpeg" alt="produit" id="img">
+                        <div class="fixed_flex_show_price">
+                            <h5>Queen Bad</h5>
+                            <p>$9.00</p>
+                            <button class="remove">remove</button>
+                       </div>
+               </div>
+               <div class="fixed_flex_quantite">
+                     <i class="fas fa-chevron-up"></i>
+                     <span class="amount">1</span>
+                     <i class="fas fa-chevron-down"></i>
+               </div>
+                
+           </div>
+           <div class="fixed_foot">
+               <h2>Your Total: $ <span class="total">0</span></h2>
+               <button class="btn fixed_foot_btn clear-cart">clear cart</button>
+           </div>
+           
+        </div>
+        </section>
+    
+
+    </main>
+
+    <footer class="footer">
+        <div id="mydiv"></div>
+
+
+
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
